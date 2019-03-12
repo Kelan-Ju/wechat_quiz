@@ -1,0 +1,73 @@
+/* pages/mine/wallet/exchange/exchange.wxss */
+.mine-bg {
+  margin: 0rpx;
+  width: 750rpx;
+  height: 1334rpx;
+  /* position: relative; */
+}
+
+.mine-bg-image {
+  margin: 0rpx;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+/* 个人头像、返回按钮、标题 */
+@import "../../../../lib/appHead.wxss";
+
+.goods-bgView {
+  margin-top: 148rpx;
+  margin-left: 20rpx;
+  width: 710rpx;
+  height: 1166rpx;
+  position: absolute;
+}
+
+.goods-item {
+  margin: 5rpx;
+  width: 345rpx;
+  height: 515rpx;
+  border-radius: 10rpx;
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  float: left;
+}
+
+.goods-image {
+  margin: 0rpx;
+  width: 345rpx;
+  height: 345rpx;
+  float: left;
+}
+
+.goods-content {
+  margin: 20rpx;
+  width: 305rpx;
+  height: 130rpx;
+  float: left;
+}
+
+.goods-description {
+  margin: 0rpx;
+  width: 100%;
+  height: 75rpx;
+  font-size: 17px;
+  line-height: 18px;
+
+  /* 只显示2行 */
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.goods-price {
+  margin-top: 10rpx;
+  margin-left: 0rpx;
+  width: 100%;
+  color: red;
+  float: left;
+}

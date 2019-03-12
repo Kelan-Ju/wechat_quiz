@@ -1,0 +1,115 @@
+/* pages/guess/guess.wxss */
+
+.background-view {
+  width: 750rpx;
+  height: 1334rpx;
+  position: relative;
+}
+
+.cover-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@import "../../lib/appHead.wxss"; 
+
+.content-bgView {
+  margin: 148rpx 0rpx 0rpx 0rpx;
+  width: 750rpx;
+  height: 1186rpx;
+  position: absolute;
+}
+
+.cover-frame {
+  margin: 0rpx;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.frame-bg {
+  margin: 70rpx;
+  height: 1046rpx;
+  width:610rpx;
+  position:absolute;
+}
+
+.question-bg {
+  margin-top: 70rpx;
+  margin-left: 125rpx;
+  width: 500rpx;
+  height: auto;
+  border-radius: 10rpx;
+  position: absolute;
+}
+
+.title {
+  margin-top: 45rpx;
+  margin-left: 0rpx;
+  width: 100%;
+  height: auto;
+  line-height: 50rpx;
+  font-family: "幼圆","方正姚体",Geneva,"Times New Roman";
+  font-weight: bold;
+  text-align: center;
+  color: gold;
+}
+
+.question {
+  margin-top: 50rpx;
+  padding: 15rpx;
+  width: 95%;
+  font-size: 17px;
+  font-family: "幼圆","方正姚体",Geneva,"Times New Roman";
+  font-weight: bold;
+  color: goldenrod;
+  text-align: center;
+  float: left;
+}
+
+.sub-question {
+  text-align: left;
+  display: inline-block;
+}
+
+.answer {
+  margin-left: 50rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  width: 400rpx;
+  height: auto;
+  font-size: 17px;
+  font-weight: bold;
+  float: left;
+  /* background-color: pink; */
+}
+
+.answer-list {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "幼圆","方正姚体",Geneva,"Times New Roman";
+  color: goldenrod;
+  line-height: 40px;
+  border-color: goldenrod;
+  border-width: 1px;
+  border-radius: 20px;
+  border-style: solid;
+}
+.answer-list-selected {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "幼圆","方正姚体",Geneva,"Times New Roman";
+  color: rgb(255, 255, 160);
+  background-color: goldenrod;
+  line-height: 40px;
+  border-radius: 20px;
+}

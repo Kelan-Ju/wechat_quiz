@@ -1,0 +1,24 @@
+<!--pages/order/order.wxml-->
+<view class='mine-bg'>
+  <image class='mine-bg-image' src='http://39.106.179.254//public//uploads//b04a3e1fd9ff4ea3efd1160b73a010bc.png'></image>
+  <!-- 返回按钮 -->
+  <view class='back-view' bindtap='backClick'>
+    <image class='back' src='http://39.106.179.254//public//uploads//19eb70b1a923922213ce5505c74770b1.png'></image>
+  </view>
+  <view class='name'>我的订单</view>
+  <!-- 订单列表 -->
+  <scroll-view class='order-list' scroll-y>
+    <view class='order-item' wx:for='{{array}}'>
+      <!-- 日期 -->
+      <view class='date'>{{item.date}}</view>
+      <!-- 内容 -->
+      <view class='order-content'>
+        <image src='{{item.image}}'></image>
+        <view class='description'>
+          <text class='description-name'>{{item.name}}</text>
+          <text class='description-price'>￥{{item.price}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

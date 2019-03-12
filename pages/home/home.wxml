@@ -1,0 +1,40 @@
+<!--pages/home/home.wxml-->
+<view class='home-bg'>
+  <image class='home-bg-image' src='http://39.106.179.254//public//uploads//b04a3e1fd9ff4ea3efd1160b73a010bc.png'></image>
+  <!-- 个人头像 -->
+  <!-- <view class='portrait-view' bindtap='portraitClick'>
+    <open-data type="userAvatarUrl" class='portrait'></open-data>
+  </view> -->
+  <!-- 定时器 -->
+  <view class='progress_box'>
+    <!-- <canvas class="progress_bg" canvas-id="canvasProgressbg"> </canvas> -->
+    <canvas class="progress_canvas" canvas-id="secondCanvas"></canvas>
+  </view>
+  <!-- 小程序名 -->
+  <view class='name'>布丁竞猜</view>
+  <swiper class='bg-scroll' current='{{currentPage}}'>
+    <swiper-item catchtouchmove="stopTouchMove" wx:for='{{content}}'>
+      <!-- 答题入口 -->
+      <view class='background-view'>
+        <!-- 背景图片 -->
+        <image src='http://39.106.179.254//public//uploads//72a9af5ef8bf475c4b79ebb3c881219e.png' class='frame-bg'></image>
+        <view class='question'>
+          <!-- 题目序号 -->
+          <text class='number'>第{{index+1}}题</text>
+          <!-- 题目内容 -->
+          <view class='content-bg'>
+            <view class='content'>
+              <text class='sub-content'>{{item.question}}</text>
+            </view>
+            <!-- 答题选项 -->
+            <view class='answer'>
+              <block wx:for="{{item.answers}}" wx:for-item="answerData" wx:for-index="answerIndex">
+                <view class="{{answerData.selected?'answer-list-selected':'answer-list'}}" bindtap='answerSelected' data-name='{{answerData}}' data-page='{{index}}' data-index='{{answerIndex}}'>{{answerData.title}}</view>
+              </block>
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

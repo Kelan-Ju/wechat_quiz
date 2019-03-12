@@ -1,0 +1,29 @@
+<!--pages/guess/guess.wxml-->
+<view class='background-view'>
+  <image src='http://39.106.179.254//public//uploads//e57b66d6498cea56c60abca44d296663.png' class='cover-bg'></image>
+  <!-- 个人头像 -->
+  <view class='portrait-view' bindtap='portraitClick'>
+    <open-data type="userAvatarUrl" class='portrait'></open-data>
+  </view>
+  <!-- 小程序名 -->
+  <view class='name'>布丁竞猜</view>
+  <view class='content-bgView'>
+    <image src='http://39.106.179.254//public//uploads//7177cb53156a946878cf1eb793b1626f.png' class='cover-frame'></image>
+    <image src='http://39.106.179.254//public//uploads//72a9af5ef8bf475c4b79ebb3c881219e.png' class='frame-bg'></image>
+
+    <!-- 题目内容 -->
+    <view class='question-bg'>
+
+      <view class='title'>竞猜题</view>
+      <view class='question'>
+        <text class='sub-question'>{{quiz.question}}</text>
+      </view>
+      <!-- 答题选项 -->
+      <view class='answer'>
+        <block wx:for="{{quiz.answer}}">
+          <view class="{{item.selected?'answer-list-selected':'answer-list'}}" bindtap='answerSelected' data-index='{{index}}' data-state='{{item.selected}}'>{{item.title}}</view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

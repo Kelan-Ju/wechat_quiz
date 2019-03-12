@@ -1,0 +1,45 @@
+
+.content-list {
+  margin-top: 400rpx;
+  width: 650rpx;
+  height: 440rpx;
+  border-radius: 20rpx;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.item {
+  margin: 0rpx 20rpx;
+  width: 610rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  border-bottom: 0.2rpx gray solid;
+}
+.item02 {
+  margin: 0rpx 20rpx;
+  width: 610rpx;
+  height: 25%;
+  line-height: 110rpx;
+}
+
+.item-icon {
+  margin-top: 30rpx;
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+.item-title {
+  margin-top: 30rpx;
+  margin-left: 15rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  float: left;
+}
+
+.enter {
+  margin-top: 30rpx;
+  margin-right: -10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+}

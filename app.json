@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/quiz/quiz",
+    "pages/mine/mine",
+    "pages/mine/wallet/wallet",
+    "pages/mine/ranking/ranking",
+    "pages/mine/order/order",
+    "pages/mine/address/address",
+    "pages/mine/wallet/exchange/exchange"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3d1e40",
+    "navigationBarTitleText": "布丁竞猜",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom"
+  }
+}
