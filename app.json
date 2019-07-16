@@ -16,5 +16,6 @@
     "navigationBarTitleText": "布丁竞猜",
     "navigationBarTextStyle": "white",
     "navigationStyle": "custom"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
